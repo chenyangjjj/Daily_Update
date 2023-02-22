@@ -1,0 +1,15 @@
+---
+title: "Q&A"
+output: html_notebook
+---
+
+
+Q: How to transform data.frame
+```{r}
+mtcars_new = mtcars
+rownames(mtcars_new) <- NULL
+colnames(mtcars_new) <- NULL
+data_t = as.data.frame(t(mtcars_new))
+```
+
+
